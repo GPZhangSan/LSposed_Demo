@@ -6,6 +6,10 @@ android {
     namespace 'com.example.lsposed_demo'
     compileSdk 34
 
+    buildFeatures {
+        buildConfig true
+    }
+
     defaultConfig {
         applicationId "com.example.lsposed_demo"
         minSdk 24
