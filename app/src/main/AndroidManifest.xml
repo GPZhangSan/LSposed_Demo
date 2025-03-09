@@ -23,7 +23,7 @@
         <!-- 模块最低支持的Api版本 一般填54即可 -->
         <meta-data
             android:name="xposedminversion"
-            android:value="54"/>
+            android:value="82"/>
 
     </application>
 </manifest>
