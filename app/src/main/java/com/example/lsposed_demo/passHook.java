@@ -23,7 +23,7 @@ public class passHook implements IXposedHookLoadPackage {
     private void hook(XC_LoadPackage.LoadPackageParam lpparam) {
         // 具体流程
 
-        // 需要Hook的方法
+        // 需要Hook的类
         final Class<?> clazz = XposedHelpers.findClass("com.xxx.xxx", lpparam.classLoader);
         // 当模块名匹配时进入处理,Hook的方法
         XposedHelpers.findAndHookMethod(clazz, "hookxxxmethod",  String.class, int.class, new XC_MethodHook() {
